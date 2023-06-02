@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>CALCULADORA</title>
+    <script defer src="https://app.embed.im/snow.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="numero" class="numeros" readonly>
+            <div class="calculator-keypad">
+                <div class="keypad-numbers">
+                    <button class="keypad-button" onclick="appendValue('1')">1</butt >
+                    <button class="keypad-button" onclick="appendValue('2')">2</button>
+                    <button class="keypad-button" onclick="appendValue('3')">3</button>
+                    <button class="keypad-button yellow" id="C" onclick="clearnumero()">C</button>
+                    <button class="keypad-button" onclick="appendValue('4')">4</button>
+                    <button class="keypad-button" onclick="appendValue('5')">5</button>
+                    <button class="keypad-button" onclick="appendValue('6')">6</button>
+                    <button class="keypad-button" onclick="appendValue('+')">+</button>
+                    <button class="keypad-button" onclick="appendValue('7')">7</button>
+                    <button class="keypad-button" onclick="appendValue('9')">9</button>
+                    <button class="keypad-button" onclick="appendValue('8')">8</button>
+                    <button class="keypad-button" onclick="appendValue('-')">-</button>
+                    <button class="keypad-button" onclick="appendValue('*')">x</button>
+                    <button class="keypad-button" onclick="appendValue('0')">0</button>
+                    <button class="keypad-button" onclick="appendValue('.')">.</button>
+                    <button class="keypad-button" onclick="appendValue('/')">/</button>
+                    
+                    <button class="keypad-button" onclick="appendValue(raiz())">∛</button>
+                    <button class="keypad-button" onclick="appendValue(sin())">sin</button>
+                    <button class="keypad-button" onclick="appendValue(coseno())">cos</button>
+                    <button class="keypad-button yellow" id="I"onclick="calculator()">=</button>
+                    <button class="keypad-button" onclick="appendValue(tan())">tan </button>
+                  <button class="keypad-button" onclick="appendValue(log())">log</button>
+                  <button class="keypad-button" onclick="appendValue(elevado())">^</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
